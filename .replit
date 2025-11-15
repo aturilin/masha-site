@@ -15,15 +15,15 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "webserver"
+args = "preview"
 
 [[workflows.workflow]]
-name = "webserver"
+name = "preview"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "python server.py"
+args = "python -m http.server 5000"
 waitForPort = 5000
 
 [workflows.workflow.metadata]
