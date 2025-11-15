@@ -112,10 +112,11 @@ body {
 
 .hero-tree {
     position: absolute;
-    width: 180px;
+    width: 240px;
     height: auto;
-    top: -30px;
-    right: -40px;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1;
     opacity: 0.9;
 }
@@ -132,20 +133,33 @@ body {
 
 .hero-leaf {
     position: absolute;
-    width: 60px;
     height: auto;
-    opacity: 0.7;
+    z-index: 3;
 }
 
+/* Лист 1: слева сверху */
 .hero-leaf-1 {
+    width: 60px;
     top: 20px;
-    left: -30px;
+    left: -80px;
+    opacity: 0.7;
     transform: rotate(-20deg);
 }
 
+/* Лист 2: по центру сверху (самый прозрачный) */
 .hero-leaf-2 {
-    bottom: 40px;
-    left: 20px;
-    transform: rotate(45deg);
     width: 50px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(15deg);
+    opacity: 0.5;
+}
+
+/* Лист 3: снизу слева (самый заметный) */
+.hero-leaf-3 {
+    width: 55px;
+    bottom: 60px;
+    left: 20px;
+    opacity: 0.8;
+    transform: rotate(45deg);
 }
