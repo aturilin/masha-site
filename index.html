@@ -3,64 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мария Бродская — Психолог в Москве</title>
+    <title>Мария Бродская — Психолог</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-wrapper">
-            <span class="nav-name">М. Бродская</span>
-            <div class="nav-links">
+    <div class="grain"></div>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="logo">MB</a>
+            <div class="nav-menu">
                 <a href="#approach">Подход</a>
-                <a href="#work">С чем работаю</a>
-                <a href="#about">Обо мне</a>
-                <a href="#contact" class="nav-cta">Связаться</a>
+                <a href="#therapy">Терапия</a>
+                <a href="#about">О себе</a>
+                <a href="#contact" class="nav-btn">Начать</a>
             </div>
         </div>
     </nav>
 
-    <main class="hero-section">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge">Психолог • Москва</div>
-                <h1 class="hero-title">
-                    Помогаю найти <br>
-                    <span class="highlight">внутреннюю опору</span> <br>
-                    и жить осмысленно
+    <section class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-left">
+                <span class="eyebrow">Психолог • Москва • Онлайн</span>
+
+                <h1 class="hero-heading">
+                    Найдите себя.<br>
+                    Обретите <span class="gradient-text">внутреннюю силу.</span>
                 </h1>
-                <p class="hero-description">
-                    Экзистенциальная и когнитивно-поведенческая терапия.
-                    Работаю с тревогой, самооценкой, отношениями и жизненными кризисами.
+
+                <p class="hero-text">
+                    Экзистенциальная и когнитивно-поведенческая психотерапия.
+                    Помогаю разобраться с тревогой, построить здоровые отношения
+                    и найти смысл в жизни.
                 </p>
-                <div class="hero-actions">
-                    <a href="#contact" class="btn-primary">Записаться на сессию</a>
-                    <a href="#about" class="btn-secondary">Узнать больше</a>
+
+                <div class="cta-group">
+                    <a href="#contact" class="btn-main">
+                        <span>Записаться на сессию</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#about" class="btn-ghost">Узнать больше</a>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">лет практики</span>
+
+                <div class="credentials">
+                    <div class="cred-item">
+                        <div class="cred-num">5+</div>
+                        <div class="cred-label">лет опыта</div>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">2760+</span>
-                        <span class="stat-label">часов сессий</span>
+                    <div class="divider"></div>
+                    <div class="cred-item">
+                        <div class="cred-num">2.7К+</div>
+                        <div class="cred-label">часов терапии</div>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">280+</span>
-                        <span class="stat-label">часов супервизии</span>
+                    <div class="divider"></div>
+                    <div class="cred-item">
+                        <div class="cred-num">280+</div>
+                        <div class="cred-label">часов супервизии</div>
                     </div>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="image-frame">
-                    <img src="8F8139AD-3ACE-4DA7-BADA-2B163CC75431.jpeg" alt="Мария Бродская, психолог">
-                </div>
-                <div class="floating-card">
-                    <p>"Терапия — это пространство, где можно быть собой"</p>
+
+            <div class="hero-right">
+                <div class="image-container">
+                    <div class="image-glow"></div>
+                    <img src="8F8139AD-3ACE-4DA7-BADA-2B163CC75431.jpeg" alt="Мария Бродская" class="hero-img">
+                    <div class="quote-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="quote-icon">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor"/>
+                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="currentColor"/>
+                        </svg>
+                        <p>Терапия — это пространство, где вы можете быть собой</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
     <script src="script.js"></script>
 </body>
