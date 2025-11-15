@@ -55,3 +55,55 @@ body {
 .nav a:hover {
     color: #4a9b7f;
 }
+
+/* Hero */
+.hero {
+    padding: 120px 0 80px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: #5a5a5a;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: #4a9b7f;
+    color: white;
+    text-decoration: none;
+    border-radius: 24px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d8469;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 155, 127, 0.3);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
