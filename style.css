@@ -78,10 +78,15 @@ body {
     margin-bottom: 20px;
 }
 
-.hero-subtitle {
-    font-size: 20px;
-    color: #5a5a5a;
+.hero-list {
+    list-style: none;
     margin-bottom: 30px;
+    font-size: 18px;
+    color: #5a5a5a;
+}
+
+.hero-list li {
+    margin-bottom: 12px;
 }
 
 .btn {
@@ -105,6 +110,19 @@ body {
     position: relative;
 }
 
+/* Зеленая подложка под фото */
+.hero-image::before {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 105%;
+    background: #a8d5b0;
+    border-radius: 80px;
+    bottom: -20px;
+    right: -30px;
+    z-index: 0;
+}
+
 .hero-tree {
     position: absolute;
     width: 180px;
@@ -119,7 +137,8 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    border-radius: 24px;
+    border-radius: 50px;
+    border: 12px solid white;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     z-index: 2;
 }
